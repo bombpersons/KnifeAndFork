@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{cd8b4dbe-a0cf-4f3d-8451-718fbcc6fb04}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibCut</RootNamespace>
+    <AssemblyName>LibCut</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>23dc0a13-f1c1-4345-8c7f-beed80a8a9f6</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Camera\Camera.cs" />
+    <Compile Include="Camera\DebugCamera.cs" />
+    <Compile Include="Camera\FitOnScreenCamera.cs" />
+    <Compile Include="Physics\CollisionContact.cs" />
+    <Compile Include="Physics\PhysicsObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapes\ClockwiseComparer.cs" />
+    <Compile Include="Shapes\PhysicsShape.cs" />
+    <Compile Include="Shapes\Shape.cs" />
+    <Compile Include="Things\Actors\Accessories\Accessory.cs" />
+    <Compile Include="Things\Actors\Accessories\Buttons\BButton.cs" />
+    <Compile Include="Things\Actors\Accessories\Eyes\BlueEyes.cs" />
+    <Compile Include="Things\Actors\Accessories\Eyes\EvenMorePeacefulEyes.cs" />
+    <Compile Include="Things\Actors\Accessories\Eyes\Eyes.cs" />
+    <Compile Include="Things\Actors\Accessories\Eyes\FastEyes.cs" />
+    <Compile Include="Things\Actors\Accessories\Eyes\PeacefulEyes.cs" />
+    <Compile Include="Things\Actors\Accessories\Melee\Fuse.cs" />
+    <Compile Include="Things\Actors\Accessories\Melee\Spike.cs" />
+    <Compile Include="Things\Actors\Accessories\Menu\Hard.cs" />
+    <Compile Include="Things\Actors\Accessories\Menu\NewGame.cs" />
+    <Compile Include="Things\Actors\Accessories\Menu\MenuItem.cs" />
+    <Compile Include="Things\Actors\Accessories\Menu\Tutorial.cs" />
+    <Compile Include="Things\Actors\Accessories\Mouths\BigTalkingBreadFace.cs" />
+    <Compile Include="Things\Actors\Accessories\Mouths\GrumpyFace.cs" />
+    <Compile Include="Things\Actors\Accessories\Mouths\ImmaFirinMaLazar.cs" />
+    <Compile Include="Things\Actors\Accessories\Mouths\MainMenuFace.cs" />
+    <Compile Include="Things\Actors\Accessories\Shooters\HamThrower.cs" />
+    <Compile Include="Things\Actors\Accessories\Shooters\Shooter.cs" />
+    <Compile Include="Things\Actors\Accessories\Thrusters\RocketThruster.cs" />
+    <Compile Include="Things\Actors\Accessories\Thrusters\SimpleThruster.cs" />
+    <Compile Include="Things\Actors\Accessories\Utility\SelfRighter.cs" />
+    <Compile Include="Things\Actors\Accessories\Utility\Shield.cs" />
+    <Compile Include="Things\Actors\Accessories\Utility\Targetter.cs" />
+    <Compile Include="Things\Actors\Accessories\Wings\BigWings.cs" />
+    <Compile Include="Things\Actors\Accessories\Wings\SmallWings.cs" />
+    <Compile Include="Things\Actors\Accessories\Wings\Wings.cs" />
+    <Compile Include="Things\Actors\Actor.cs" />
+    <Compile Include="Things\Actors\Food\Bread.cs" />
+    <Compile Include="Things\Actors\Food\Carrot.cs" />
+    <Compile Include="Things\Actors\Food\ChickenNugget.cs" />
+    <Compile Include="Things\Actors\Food\Coconut.cs" />
+    <Compile Include="Things\Actors\Food\CupCake.cs" />
+    <Compile Include="Things\Actors\Food\Ham.cs" />
+    <Compile Include="Things\Actors\Food\Pie.cs" />
+    <Compile Include="Things\Actors\MenuItems\Hard.cs" />
+    <Compile Include="Things\Actors\MenuItems\MainMenuHelperGuy.cs" />
+    <Compile Include="Things\Actors\MenuItems\NewGame.cs" />
+    <Compile Include="Things\Actors\MenuItems\Tutorial.cs" />
+    <Compile Include="Things\Background\Background.cs" />
+    <Compile Include="Things\Bullet\Bullet.cs" />
+    <Compile Include="Things\Bullet\BulletShooterProxy.cs" />
+    <Compile Include="Things\Bullet\Explosion.cs" />
+    <Compile Include="Things\Bullet\Ham.cs" />
+    <Compile Include="Things\Bullet\StaticBullet.cs" />
+    <Compile Include="Things\Cursor\Cursor.cs" />
+    <Compile Include="Things\DebugItems\ShapeMaker\ShapeMaker.cs" />
+    <Compile Include="Things\Effects\CoconutMilkCut.cs" />
+    <Compile Include="Things\Effects\Cut.cs" />
+    <Compile Include="Things\Effects\CoconutCut.cs" />
+    <Compile Include="Things\Effects\Effect.cs" />
+    <Compile Include="Things\EnemySpawner\EnemySpawner.cs" />
+    <Compile Include="Things\Flash\Flash.cs" />
+    <Compile Include="Things\Flash\ForkFlash.cs" />
+    <Compile Include="Things\Flash\KnifeFlash.cs" />
+    <Compile Include="Things\GarbageCleaner\GarbageCleaner.cs" />
+    <Compile Include="Things\Health\CollectionProgress.cs" />
+    <Compile Include="Things\Health\HealthBar.cs" />
+    <Compile Include="Things\LevelController\LevelController.cs" />
+    <Compile Include="Things\Model3D\Model3D.cs" />
+    <Compile Include="Things\PauseScreen\MissionBrief.cs" />
+    <Compile Include="Things\PauseScreen\Pause.cs" />
+    <Compile Include="Things\PauseScreen\Paused.cs" />
+    <Compile Include="Things\Plate\Plate.cs" />
+    <Compile Include="Things\Players\Fork.cs" />
+    <Compile Include="Things\Players\Knife.cs" />
+    <Compile Include="Things\Players\Player.cs" />
+    <Compile Include="Things\Sprite\Sprite.cs" />
+    <Compile Include="Things\Sprite\StaticSprite.cs" />
+    <Compile Include="Things\TextBox\SpeechBubble.cs" />
+    <Compile Include="Things\TextBox\TextBox.cs" />
+    <Compile Include="Things\Thing.cs" />
+    <Compile Include="Things\Trail\Trail.cs" />
+    <Compile Include="Universe\Levels\Level1.cs" />
+    <Compile Include="Universe\Levels\Level.cs" />
+    <Compile Include="Universe\Levels\Level2.cs" />
+    <Compile Include="Universe\Levels\LevelState\LevelState.cs" />
+    <Compile Include="Universe\Levels\Menu.cs" />
+    <Compile Include="Universe\Levels\Tutorial.cs" />
+    <Compile Include="Universe\Universe.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RPGText\Xbox 360 Copy of RPGText.csproj">
+      <Project>{e66e9866-ea81-4c7b-8622-948a9207621e}</Project>
+      <Name>Xbox 360 Copy of RPGText</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Box2D.XNA\Xbox 360 Copy of Box2D.XNA - windows.csproj">
+      <Project>{015a170f-1f83-4b3d-a389-70134ea60217}</Project>
+      <Name>Xbox 360 Copy of Box2D.XNA - windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibCut%28Content%29\LibCut%28Content%29.contentproj">
+      <Project>{E4F548E9-5256-445C-84AA-752FC886F7BA}</Project>
+      <Name>LibCut%28Content%29 %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+    <ProjectReference Include="..\Orange.XNA\Xbox 360 Copy of Orange.XNA.csproj">
+      <Project>{2e8f6eee-a721-4781-bbe3-1af1aab9ffb8}</Project>
+      <Name>Xbox 360 Copy of Orange.XNA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

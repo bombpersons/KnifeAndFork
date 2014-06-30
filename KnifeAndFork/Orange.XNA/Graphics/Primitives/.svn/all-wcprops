@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knifefork/!svn/ver/7/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives
+END
+RectBorder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/knifefork/!svn/ver/5/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives/RectBorder.cs
+END
+Rectangle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/knifefork/!svn/ver/5/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives/Rectangle.cs
+END
+Grid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/knifefork/!svn/ver/7/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives/Grid.cs
+END
+Line.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/knifefork/!svn/ver/5/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives/Line.cs
+END
+TextureGen.cs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/knifefork/!svn/ver/5/trunk/KnifeAndFork/Orange.XNA/Graphics/Primitives/TextureGen.cs
+END
